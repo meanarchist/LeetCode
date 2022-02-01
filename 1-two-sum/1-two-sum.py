@@ -2,8 +2,8 @@ class Solution(object):
     def twoSum(self, nums, target):
         dic={}
         for i, v in enumerate(nums):
-            remaining = target - v
-            if remaining in dic:
-                return [dic[remaining], i]
+            r= target - v
+            if r in dic:
+                return [dic[r], i]
             dic[v] = i
         return []
